@@ -6,18 +6,15 @@ namespace LinlListProgram
     {
         static void Main(string[] args)
         {
+
             Console.WriteLine("Welcome to the LinkedList Program");
 
-            LinkedList linkedList = new LinkedList();
-
-            Console.WriteLine("Add elements into Linkedlist using AddLast Method:");
-            linkedList.Add(56);
-            linkedList.Add(30);
-            linkedList.Add(70);
-            linkedList.Display();
-
-            
-
+            LinkedList linkdedList = new LinkedList();
+            linkdedList.Add(56);
+            //linkdedList.Add(30);
+            linkdedList.Add(70);
+            linkdedList.InsertAtParticularPosition(2, 30);
+            linkdedList.Display();
         }
     }
 }
