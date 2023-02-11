@@ -13,8 +13,9 @@ namespace LinlListProgram
             linkdedList.Add(30);
             linkdedList.Add(70);
             linkdedList.Display();
-            linkdedList.DeleteLastNode();
-            linkdedList.Display();
+            //linkdedList.DeleteLastNode();
+            // linkdedList.Display();
+            linkdedList.Search(30);
         }
     }
 }
