@@ -4,6 +4,7 @@ namespace LinlListProgram
 {
     internal class Program
     {
+
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the LinkedList Program");
@@ -15,7 +16,9 @@ namespace LinlListProgram
             linkdedList.Display();
             //linkdedList.DeleteLastNode();
             // linkdedList.Display();
-            linkdedList.Search(30);
+            //linkdedList.Search(30);
+            linkdedList.InsertAtParticularPosition(3, 40);
+            linkdedList.Display();
         }
     }
 }
