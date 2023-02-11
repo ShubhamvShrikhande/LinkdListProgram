@@ -28,19 +28,6 @@ namespace LinlListProgram
             }
             Console.WriteLine("Inserted into Linked List :  {0}", node.data);
         }
-        internal void Display()
-        {
-            Node temp = this.head;
-            if (temp == null)
-            {
-                Console.WriteLine(" Linked List is Empty ");
-            }
-            while (temp != null)
-            {
-                Console.WriteLine(temp.data + " ");
-                temp = temp.next;
-            }
-        }
 
         internal Node InsertAtParticularPosition(int position, int data)
         {
@@ -74,6 +61,33 @@ namespace LinlListProgram
                 }
             }
             return head;
+        }
+        public void DeleteFirstNode()
+        {
+            if (head != null)
+            {
+                head = head.next;
+                Console.WriteLine("\nFirst element deleted");
+            }
+        }
+
+        public void Display()
+        {
+            Console.WriteLine("Displaying Nodes:");
+            Node temp = this.head;
+            if (temp == null)
+            {
+                Console.WriteLine("LinkedList is Empty");
+                return;
+            }
+            else
+            {
+                while (temp != null)
+                {
+                    Console.Write(" " + temp.data + " ");
+                    temp = temp.next;
+                }
+            }
         }
     }
 }
