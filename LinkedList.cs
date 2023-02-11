@@ -10,7 +10,7 @@ namespace LinlListProgram
     internal class LinkedList
     {
         internal Node head;
-        internal void AddLast(int data)
+        internal void Add(int data)
         {
             Node Node = new Node(data);
             if (this.head == null)
@@ -28,12 +28,9 @@ namespace LinlListProgram
             }
             Console.WriteLine("{0} is inserted into LinkedList", Node.data);
         }
-        internal void AddFirst(int data)
+        internal void Append(int data)
         {
-            Node Node = new Node(data);
-            Node.next = this.head;
-            this.head = Node;
-            Console.WriteLine("{0} is inserted into LinkedList", Node.data);
+            Add(data);
         }
         public void Display()
         {
